@@ -7,12 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		974620D223D01CED00E8268F /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974620D123D01CED00E8268F /* UserDefault.swift */; };
+		977FE5A323D044C0005D6140 /* UserDefaultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977FE5A223D044C0005D6140 /* UserDefaultTest.swift */; };
 		979F5EED23D01C44000EF7A2 /* SwiftyWrappers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979F5EE323D01C44000EF7A2 /* SwiftyWrappers.framework */; };
 		979F5EF223D01C44000EF7A2 /* SwiftyWrappersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979F5EF123D01C44000EF7A2 /* SwiftyWrappersTests.swift */; };
 		979F5EF423D01C44000EF7A2 /* SwiftyWrappers.h in Headers */ = {isa = PBXBuildFile; fileRef = 979F5EE623D01C44000EF7A2 /* SwiftyWrappers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9746211523D01D7600E8268F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9746210F23D01D7500E8268F /* Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 974620DC23D01D7400E8268F;
+			remoteInfo = Example;
+		};
+		9746211723D01D7600E8268F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9746210F23D01D7500E8268F /* Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 974620F223D01D7500E8268F;
+			remoteInfo = ExampleTests;
+		};
+		9746211923D01D7600E8268F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9746210F23D01D7500E8268F /* Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 974620FD23D01D7500E8268F;
+			remoteInfo = ExampleUITests;
+		};
 		979F5EEE23D01C44000EF7A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 979F5EDA23D01C44000EF7A2 /* Project object */;
@@ -23,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		974620D123D01CED00E8268F /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		9746210F23D01D7500E8268F /* Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Example.xcodeproj; path = Example/Example.xcodeproj; sourceTree = "<group>"; };
+		977FE5A223D044C0005D6140 /* UserDefaultTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultTest.swift; sourceTree = "<group>"; };
 		979F5EE323D01C44000EF7A2 /* SwiftyWrappers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyWrappers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		979F5EE623D01C44000EF7A2 /* SwiftyWrappers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyWrappers.h; sourceTree = "<group>"; };
 		979F5EE723D01C44000EF7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,9 +76,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		974620D023D01CD500E8268F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				974620D123D01CED00E8268F /* UserDefault.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9746211023D01D7500E8268F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9746211623D01D7600E8268F /* Example.app */,
+				9746211823D01D7600E8268F /* ExampleTests.xctest */,
+				9746211A23D01D7600E8268F /* ExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		979F5ED923D01C44000EF7A2 = {
 			isa = PBXGroup;
 			children = (
+				9746210F23D01D7500E8268F /* Example.xcodeproj */,
 				979F5EE523D01C44000EF7A2 /* SwiftyWrappers */,
 				979F5EF023D01C44000EF7A2 /* SwiftyWrappersTests */,
 				979F5EE423D01C44000EF7A2 /* Products */,
@@ -71,6 +116,7 @@
 		979F5EE523D01C44000EF7A2 /* SwiftyWrappers */ = {
 			isa = PBXGroup;
 			children = (
+				974620D023D01CD500E8268F /* Sources */,
 				979F5EE623D01C44000EF7A2 /* SwiftyWrappers.h */,
 				979F5EE723D01C44000EF7A2 /* Info.plist */,
 			);
@@ -80,6 +126,7 @@
 		979F5EF023D01C44000EF7A2 /* SwiftyWrappersTests */ = {
 			isa = PBXGroup;
 			children = (
+				977FE5A223D044C0005D6140 /* UserDefaultTest.swift */,
 				979F5EF123D01C44000EF7A2 /* SwiftyWrappersTests.swift */,
 				979F5EF323D01C44000EF7A2 /* Info.plist */,
 			);
@@ -148,6 +195,7 @@
 				TargetAttributes = {
 					979F5EE223D01C44000EF7A2 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					979F5EEB23D01C44000EF7A2 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -165,6 +213,12 @@
 			mainGroup = 979F5ED923D01C44000EF7A2;
 			productRefGroup = 979F5EE423D01C44000EF7A2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9746211023D01D7500E8268F /* Products */;
+					ProjectRef = 9746210F23D01D7500E8268F /* Example.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				979F5EE223D01C44000EF7A2 /* SwiftyWrappers */,
@@ -172,6 +226,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9746211623D01D7600E8268F /* Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Example.app;
+			remoteRef = 9746211523D01D7600E8268F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9746211823D01D7600E8268F /* ExampleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ExampleTests.xctest;
+			remoteRef = 9746211723D01D7600E8268F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9746211A23D01D7600E8268F /* ExampleUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ExampleUITests.xctest;
+			remoteRef = 9746211923D01D7600E8268F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		979F5EE123D01C44000EF7A2 /* Resources */ = {
@@ -195,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				974620D223D01CED00E8268F /* UserDefault.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977FE5A323D044C0005D6140 /* UserDefaultTest.swift in Sources */,
 				979F5EF223D01C44000EF7A2 /* SwiftyWrappersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +420,7 @@
 		979F5EF823D01C44000EF7A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LS8QRLJL3W;
@@ -356,6 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "TAI-VUONG.SwiftyWrappers";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +446,7 @@
 		979F5EF923D01C44000EF7A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LS8QRLJL3W;
@@ -388,6 +471,7 @@
 		979F5EFB23D01C44000EF7A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LS8QRLJL3W;
 				INFOPLIST_FILE = SwiftyWrappersTests/Info.plist;
@@ -406,6 +490,7 @@
 		979F5EFC23D01C44000EF7A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LS8QRLJL3W;
 				INFOPLIST_FILE = SwiftyWrappersTests/Info.plist;
